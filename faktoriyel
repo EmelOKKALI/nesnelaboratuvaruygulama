@@ -1,0 +1,18 @@
+package javaapplication1;
+import java.util.Scanner;
+import static java.lang.System.out;
+public class JavaApplication1 {
+    public static void main(String[] args) {
+      Scanner giris= new Scanner(System.in);
+      int sayi1=giris.nextInt();
+      int sayi2=giris.nextInt();
+      int c=sayi1+sayi2;
+      int fak=1;
+      System.out.println("iki sayının toplamı="+c);
+      for (int i=1; i<=c; i++){
+      fak=fak*i;
+      }
+      out.println("faktoriyel sonucu="+ fak);
+    }
+    
+}
