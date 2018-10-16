@@ -1,0 +1,29 @@
+package amstrong;
+import java.util.Scanner;
+public class Amstrong {
+    public static void main(String[] args) {
+       Scanner giris= new Scanner(System.in);
+       System.out.println("sayı giriniz");
+       int sayi1= giris.nextInt();
+       int sayi=sayi1;
+       String yenideger= Integer.toString(sayi);
+       int kdeger=yenideger.length();
+       double a,t=0;
+       int kalan,tekraris;
+      for(int i=kdeger; i>0; i--)
+      {
+          a=Math.pow(10,i-1);
+          kalan=sayi/(int)a;
+          t=t+Math.pow((double)kalan, (double)kdeger);
+          tekraris=sayi-(kalan*(int)Math.pow(10,i-1));
+          sayi=tekraris;
+      }
+       if(sayi1==t)
+       {
+           System.out.println("amstrong");
+       }else{
+       System.out.println("amstrong değil ");
+       }
+    }
+    
+}
