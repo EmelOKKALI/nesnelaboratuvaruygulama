@@ -1,0 +1,23 @@
+package javaapplication23;
+public class JavaApplication23 {
+    public static void main(String[] args) {
+        int dizi[]={1,2,8,7,6,3,0,2,0,0,4,5,7,8,2,8}; 
+    int sayac=0;
+    int tut=0;
+    int deger=0;
+    int j=0;
+    for(int i=0;i<dizi.length-1 ; i++){
+     if(dizi[i]<dizi[i+1]){
+                sayac++;
+         }
+     else{tut=sayac;
+     j=i-sayac;
+     if(deger<tut){
+     deger=tut;}
+     sayac=0;}}
+        System.out.println("çıktı "+(deger+1));
+        for(int m=j;m<j+deger+1;m++){
+        System.out.print(dizi[m]+" ");}
+        System.out.println("dizisi "+deger+" adımlık artan dizidir.");  
+    }   
+}
