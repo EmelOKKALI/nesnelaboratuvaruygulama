@@ -1,0 +1,19 @@
+public class Cümledekarakterdenkacadettoplamı {
+
+    public static void main(String[] args) {
+        Scanner giris= new Scanner(System.in);
+        System.out.println("cümleyi Giriniz");
+        String cumle=giris.nextLine();
+    
+        int t=0;
+   
+        for(int i=0; i<cumle.length(); i++){
+            if(cumle.charAt(i)>'d'){
+                
+                t=t+1;
+            }
+        }
+        System.out.println(t);
+    }
+    
+}
